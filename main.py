@@ -14,7 +14,7 @@ latest_time = time.time()
 
 emp1 = SystemManagement("emp1", "Jatin", "jatin.wadhwani@radixweb.com", "Python")
 emp2 = SystemManagement("emp2", "Kunal", "kunal.singh@radixweb.com", "QA")
-emp3 = SystemManagement("emp3", "Deepal", "deepak.shukla@radixweb.com", "Python")
+emp3 = SystemManagement("emp3", "Deepak", "deepak.shukla@radixweb.com", "Python")
 #emp1.display()
 
 print(" ======= Welcome To Radixweb ======= ")
@@ -22,11 +22,12 @@ while True:
 
     print("1. Want to scan ? ")
     print("2. Want to see report ? ")
-    print("3. Exit ?")
+    print("3. Employees Details ?")
+    print("4. Exit ?")
     choice = int(input("Select one option : "))
 
     if choice == 1:
-        employee_id = int(input("Who Scanned Now ? "))
+        employee_id = int(input("Who Scanned Now [1, 2, 3] ? "))
         if employee_id not in employees_id:
             print("Employee Id Not Found... :(")
 
@@ -46,6 +47,14 @@ while True:
         print("\n\n# ==================================================================================== #\n")
 
     elif choice == 3:
+        print("\n# ==================================================================================== #\n")
+        print("\n\tName \t\t Email \t\t\t\t\t department \n")
+        print(emp1.display())
+        print(emp2.display())
+        print(emp3.display())
+        print("\n\n# ==================================================================================== #\n")
+
+    elif choice == 4:
         break
 
 

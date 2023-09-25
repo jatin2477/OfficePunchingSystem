@@ -22,7 +22,7 @@ class SystemManagement:
         self.first_in = 0
 
     def display(self):
-        print("Name : ", self.name, " Email : ", self.email, " department : ", self.deptartment)        
+        return f"\t{self.name} \t\t {self.email} \t\t {self.deptartment}"
 
     def log_time(self):
         if self.first_in == 0:
